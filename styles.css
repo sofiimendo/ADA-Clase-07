@@ -1,0 +1,39 @@
+*{
+    margin:0;
+}
+.container{
+    background-color: beige;
+    /*Habilitamos sobre los hijos a las funciones de Flexbox*/
+    display: flex;
+    height: 600px;
+    width: 100%;
+    /*Mover a sus hijos sobre el brazo principal*/
+    /*
+    Cajas Simples:
+        flex-start:Principio
+        flex-center:Medio
+        flex-end:Al final
+    Cajas Multiples:
+        space-between:va a alejar las cajas tanto como pueda
+        space-around:Va a tomar la distancia entre cajas y le aplicará un márgen con la mitad de la distancia 
+        space-evenly:habrá una unica distancia entre las cajas y los margenes
+        
+        */
+    justify-content: space-around;
+    /*
+    Brazo principal
+    */
+    flex-direction: row;
+    align-items: flex-start;
+}
+.caja{
+    background-color: hotpink;
+    height: 80px;
+    width: 80px;
+    font-size: 36px;
+    color:antiquewhite;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid gray
+}
